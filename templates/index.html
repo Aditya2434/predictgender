@@ -1,0 +1,223 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+
+<!-- Hero Section -->
+<div class="container-fluid hero-section" style="background-image: linear-gradient(to bottom, #f5f5f5, #fff);">
+    <div class="container">
+        <br><br>
+        <h1 class="display-3 text-center text-break" style="color: #333; font-weight: bold; max-width: 100%; font-size: 56px;">
+            Welcome to Face Recognition Web App Project
+        </h1>
+        <br>
+        <p class="lead text-center">
+            Follow the steps to run the project
+        </p>
+    </div>
+</div>
+
+<!-- Steps Section -->
+<div class="container steps-section" style="background-image: linear-gradient(to bottom, #fff, #f5f5f5);">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-4 col-lg-4 mb-4">
+            <div class="card shadow step-card" style="border-radius: 10px;">
+                <img src="/static/images/step1.png" alt="" class="img-fluid" style="width:100%; height:200px; border-radius: 10px 10px 0 0;">
+                <div class="card-body">
+                    <h5 class="card-title">Step 1</h5>
+                    <p class="card-text">Description of Step 1</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 mb-4">
+            <div class="card shadow step-card" style="border-radius: 10px;">
+                <img src="/static/images/step2.png" alt="" class="img-fluid" style="width:100%; height:200px; border-radius: 10px 10px 0 0;">
+                <div class="card-body">
+                    <h5 class="card-title">Step 2</h5>
+                    <p class="card-text">Description of Step 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 mb-4">
+            <div class="card shadow step-card" style="border-radius: 10px;">
+                <img src="/static/images/step3.png" alt="" class="img-fluid" style="width:100%; height:200px; border-radius: 10px 10px 0 0;">
+                <div class="card-body">
+                    <h5 class="card-title">Step 3</h5>
+                    <p class="card-text">Description of Step 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Me Section -->
+<div id="about-me" class="container about-me-section" style="background-image: linear-gradient(to bottom, #f5f5f5, #fff);">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-8">
+            <h2 class="text-center">About Me</h2>
+            <p class="lead text-center">A brief introduction about myself</p>
+            <p>I am Aditya Chauhan, an AI and ML engineer in my final year of a B.Tech degree in AI and ML. With a strong foundation in machine learning, computer vision, and web development, I have worked on diverse projects, including bird and animal identification and plant disease detection. Additionally, I have backend development experience from my internships at WINGS INDIA , where I enhanced my skills in building and optimizing backend solutions. My expertise also extends to creating interactive web applications using technologies such as Flask, HTML, CSS, and Python.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div class="contact-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-12 col-lg-12">
+          <div class="contact-box-wrapper">
+            <div class="contact-box">
+              <a href="https://github.com/Aditya2434" target="_blank">
+                <div class="contact-icon">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </div>
+              </a>
+            </div>
+            <div class="contact-box">
+              <a href="mailto:imadityachauhan149@gmail.com" target="_blank">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                </div>
+              </a>
+            </div>
+            <div class="contact-box">
+              <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank">
+                <div class="contact-icon">
+                  <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer Section -->
+<div class="container-fluid footer-section" style="background-color: #333; color: #fff; padding: 20px;">
+    <div class="container">
+        <p class="text-center">Copyright &copy; 2023 Aditya Chauhan. All rights reserved.</p>
+    </div>
+</div>
+
+<style>
+
+    .contact-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      
+      .contact-box-wrapper {
+        text-align: center;
+      }
+      
+      .contact-box {
+        display: inline-block;
+        margin: 0 20px;
+      }
+      
+      .contact-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: inline-block;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .contact-icon:hover {
+        background-color: #cccccc; /* Change background color to gray */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        transform: scale(1.1);
+        animation: pulse 1s infinite; /* Add animation to hovered icon */
+      }
+      
+      .contact-icon i {
+        font-size: 20px;
+        color: #000;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .contact-icon:hover i {
+        color: #fff;
+      }
+      
+      /* Define the animation */
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .contact-section {
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+        .contact-box {
+          margin: 0 10px;
+        }
+      }
+      
+      @media (max-width: 576px) {
+        .contact-section {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        .contact-box {
+          margin: 0 5px;
+        }
+        .contact-icon {
+          width: 30px;
+          height: 30px;
+          padding: 5px;
+        }
+        .contact-icon i {
+          font-size: 15px;
+        }
+      }
+    /* Add some basic responsive styles */
+    @media (max-width: 768px) {
+        .hero-section {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .hero-section {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .card {
+            margin-bottom: 10px;
+        }
+        .card-body {
+            padding: 10px;
+        }
+    }
+
+    /* Add shadow effect to cards */
+    .card.shadow {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style the About Me section */
+    .about-me-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+</style>
+
+{% endblock %}
